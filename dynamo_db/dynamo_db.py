@@ -1,9 +1,9 @@
 import boto3
 from boto3.dynamodb.conditions import Key
 
-def add_processed_file(file_name):
+def add_processed_file(key, boto3):
     file = {
-        'id': file_name
+        'id': key
     }
     
     dynamodb = boto3.resource('dynamodb')
@@ -13,14 +13,14 @@ def add_processed_file(file_name):
     table.put_item(Item=file)
 
 
-def check_for_file(file_name):
+def check_for_file(key, boto3):
     dynamodb = boto3.resource('dynamodb')
     
     table = dynamodb.Table('task-log')
     
     response = table.get_item(
         Key={
-            'id': file_name
+            'id': key
         }
     )
     

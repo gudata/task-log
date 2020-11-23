@@ -12,8 +12,8 @@ pluggins:
   - serverless-python-requirements
 
 functions:
-  check_file:
-    handler: lambda.check_file
+  log_file:
+    handler: handlers.task_log
 
     events:
       - sns: arn:aws:sns:#{AWS::Region}:#{AWS::AccountId}:rawFileUploaded

@@ -1,7 +1,8 @@
 import json
-import handler.file_processor as file_processor
+import models.file_processor as file_processor
 
-def check_file(event, context):
+def log_file(event, context):
+    print(event)
     json_string = json.dumps(event).replace("'", "\"")
     converted_event = json.loads(json_string)    
     topics = converted_event['Records'][0]
