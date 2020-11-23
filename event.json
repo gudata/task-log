@@ -1,0 +1,39 @@
+{"Records": [
+        {"EventSource": "aws:sns", "EventVersion": "1.0", "EventSubscriptionArn": "arn:aws:sns:us-east-1: 114193179106:rawFileUploaded:e3c562a7-b6fd-442f-b0f9-d5439de5f3c8", "Sns": {"Type": "Notification", "MessageId": "bb56eaf8-8a5f-5584-8cba-b2c950aca2f4", "TopicArn": "arn:aws:sns:us-east-1: 114193179106:rawFileUploaded", "Subject": "Amazon S3 Notification", "Message": {
+                    "Records": [
+                        {
+                            "eventVersion": "2.1",
+                            "eventSource": "aws:s3",
+                            "awsRegion": "us-east-1",
+                            "eventTime": "2020-11-20T14:54:37.478Z",
+                            "eventName": "ObjectCreated:Put",
+                            "userIdentity": {
+                                "principalId": "AWS:AROAIVIKV6MS7PRZLX7Y4:gsamodivekov@fmsystems.com"
+                            },
+                            "requestParameters": {
+                                "sourceIPAddress": "78.83.72.91"
+                            },
+                            "responseElements": {
+                                "x-amz-request-id": "1E0ABAB5E3D4B340",
+                                "x-amz-id-2": "vrPN3b0A0eCjXkeSVysvlKrDRueDqsIHxHvArk6ueL/Yz0FHxsBdOzrHMG/5RAWX6nOVlg4Tr4OqcHoZt8uEuoCjpYPVVq4+"
+                            },
+                            "s3": {
+                                "s3SchemaVersion": "1.0",
+                                "configurationId": "tf-s3-topic-20190723133959839400000003",
+                                "bucket": {
+                                    "name": "frozen.raw.rifiniti.com",
+                                    "ownerIdentity": {
+                                        "principalId": "A1H22KBWMR6RB1"
+                                    },
+                                    "arn": "arn:aws:s3:::frozen.raw.rifiniti.com"
+                                },
+                                "object": {
+                                    "key": "tmp/file.txt",
+                                    "size": 3,
+                                    "eTag": "31ebdfce8b77ac49d7f5506dd1495830",
+                                    "sequencer": "005FB7D8B1750A6682"
+                                }
+                            }
+                        }
+                    ]
+                }, "Timestamp": "2020-11-20T14: 54: 43.033Z", "SignatureVersion": "1", "Signature": "gj5Mf8nFmae/7CrbA5Xwn0ywuib7o5tJp2VsvHAvK5VbAHeWKZ/FDB5gYar8qzKTtQmHVYSq6eH2HM2HGpiSt3TdcCK4OeM3vTTLdWjV/yjgfP4keuleTWBmX0e5YjYQUYRd85so3fsK0eCsdT97g+I1Jna8ioacWADIb2jBaGr8/FZEazaQqtR0bk/RdfRj0irPPVro1E0RS+8aBTKN4EMWHu6+cpndQ8TKKZnL0+lT0BdxvRrNeCEvBszn/GSgVMP7xXz20QLPPUV4BOAdl8/bWzmAy0vQV8Tjjs/y3W5RFVOuU9ge3Ki3nzJ4yQogKy09ZQut1BhhVT/9vjBDXg==", "SigningCertUrl": "https: //sns.us-east-1.amazonaws.com/SimpleNotificationService-a86cb10b4e1f29c941702d737128f7b6.pem", "UnsubscribeUrl": "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:114193179106:rawFileUploaded:e3c562a7-b6fd-442f-b0f9-d5439de5f3c8", "MessageAttributes": {}}}]}
